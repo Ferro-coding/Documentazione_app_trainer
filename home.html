@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentazione App Fitness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Sidebar -->
+    <div class="hidden lg:flex lg:fixed lg:inset-y-0 lg:flex-col lg:w-64">
+        <div class="flex-1 flex flex-col min-h-0 bg-white border-r border-gray-200">
+            <div class="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
+                <div class="flex items-center flex-shrink-0 px-4">
+                    <h1 class="text-xl font-bold">App Fitness</h1>
+                </div>
+                <nav class="mt-5 flex-1 px-2 space-y-1">
+                    <a href="#introduzione" class="bg-gray-100 text-gray-900 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+                        Introduzione
+                    </a>
+                    <a href="#autenticazione" class="text-gray-600 hover:bg-gray-50 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+                        Autenticazione
+                    </a>
+                    <a href="#trainer" class="text-gray-600 hover:bg-gray-50 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+                        Funzionalità Trainer
+                    </a>
+                    <a href="#atleti" class="text-gray-600 hover:bg-gray-50 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+                        Funzionalità Atleti
+                    </a>
+                    <a href="#schede" class="text-gray-600 hover:bg-gray-50 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+                        Gestione Schede
+                    </a>
+                    <a href="#esercizi" class="text-gray-600 hover:bg-gray-50 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+                        Gestione Esercizi
+                    </a>
+                    <a href="#tutorial" class="text-gray-600 hover:bg-gray-50 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+                        Tutorial Video
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="lg:pl-64">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section id="introduzione" class="py-8">
+                <div class="bg-white shadow sm:rounded-lg p-6">
+                    <h2 class="text-2xl font-bold mb-4">Introduzione</h2>
+                    <p class="text-gray-600 mb-4">
+                        Questa applicazione è una piattaforma completa per la gestione di allenamenti tra trainer e atleti.
+                        Permette ai trainer di creare e gestire schede di allenamento personalizzate per i loro atleti,
+                        includendo tutorial video e monitorando i progressi.
+                    </p>
+                    <div class="mt-4">
+                        <h3 class="text-lg font-semibold mb-2">Caratteristiche Principali</h3>
+                        <ul class="list-disc pl-5 text-gray-600">
+                            <li>Sistema di autenticazione per trainer e atleti</li>
+                            <li>Creazione e gestione schede di allenamento</li>
+                            <li>Gestione esercizi con set, ripetizioni e tempi di riposo</li>
+                            <li>Tutorial video per gli esercizi</li>
+                            <li>Sistema di note e feedback</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="autenticazione" class="py-8">
+                <div class="bg-white shadow sm:rounded-lg p-6">
+                    <h2 class="text-2xl font-bold mb-4">Autenticazione</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Registrazione</h3>
+                            <p class="text-gray-600">
+                                Per registrarsi è necessario fornire:
+                            </p>
+                            <ul class="list-disc pl-5 text-gray-600 mt-2">
+                                <li>Username</li>
+                                <li>Email</li>
+                                <li>Password</li>
+                                <li>Conferma Password</li>
+                                <li>Tipo utente (Trainer/Atleta)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Login</h3>
+                            <p class="text-gray-600">
+                                Il login richiede:
+                            </p>
+                            <ul class="list-disc pl-5 text-gray-600 mt-2">
+                                <li>Username</li>
+                                <li>Password</li>
+                                <li>Opzione "Ricordami" per mantenere la sessione attiva</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="trainer" class="py-8">
+                <div class="bg-white shadow sm:rounded-lg p-6">
+                    <h2 class="text-2xl font-bold mb-4">Funzionalità Trainer</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Gestione Atleti</h3>
+                            <ul class="list-disc pl-5 text-gray-600">
+                                <li>Visualizzazione lista atleti</li>
+                                <li>Dettagli singolo atleta</li>
+                                <li>Eliminazione atleta</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Gestione Tutorial</h3>
+                            <ul class="list-disc pl-5 text-gray-600">
+                                <li>Aggiunta nuovi tutorial video</li>
+                                <li>Modifica tutorial esistenti</li>
+                                <li>Eliminazione tutorial</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="atleti" class="py-8">
+                <div class="bg-white shadow sm:rounded-lg p-6">
+                    <h2 class="text-2xl font-bold mb-4">Funzionalità Atleti</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Dashboard Atleta</h3>
+                            <ul class="list-disc pl-5 text-gray-600">
+                                <li>Visualizzazione schede assegnate</li>
+                                <li>Accesso ai tutorial video degli esercizi</li>
+                                <li>Aggiunta note e progressi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="schede" class="py-8">
+                <div class="bg-white shadow sm:rounded-lg p-6">
+                    <h2 class="text-2xl font-bold mb-4">Gestione Schede</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Creazione Scheda</h3>
+                            <ul class="list-disc pl-5 text-gray-600">
+                                <li>Nome della scheda</li>
+                                <li>Descrizione</li>
+                                <li>Selezione atleta</li>
+                                <li>Aggiunta esercizi</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Operazioni sulle Schede</h3>
+                            <ul class="list-disc pl-5 text-gray-600">
+                                <li>Modifica scheda esistente</li>
+                                <li>Eliminazione scheda</li>
+                                <li>Copia scheda esistente</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="esercizi" class="py-8">
+                <div class="bg-white shadow sm:rounded-lg p-6">
+                    <h2 class="text-2xl font-bold mb-4">Gestione Esercizi</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Dettagli Esercizio</h3>
+                            <ul class="list-disc pl-5 text-gray-600">
+                                <li>Nome esercizio</li>
+                                <li>Descrizione</li>
+                                <li>Numero di set</li>
+                                <li>Numero di ripetizioni</li>
+                                <li>Tempo di riposo</li>
+                                <li>Tutorial video associato</li>
+                                <li>Giorno di esecuzione</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Note e Progressi</h3>
+                            <ul class="list-disc pl-5 text-gray-600">
+                                <li>Aggiunta note per ogni esercizio</li>
+                                <li>Registrazione peso utilizzato</li>
+                                <li>Conteggio set completati</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tutorial" class="py-8">
+                <div class="bg-white shadow sm:rounded-lg p-6">
+                    <h2 class="text-2xl font-bold mb-4">Tutorial Video</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Gestione Tutorial</h3>
+                            <ul class="list-disc pl-5 text-gray-600">
+                                <li>Aggiunta nuovo tutorial con nome e link YouTube</li>
+                                <li>Modifica tutorial esistenti</li>
+                                <li>Associazione tutorial agli esercizi</li>
+                                <li>Eliminazione tutorial</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Visualizzazione</h3>
+                            <ul class="list-disc pl-5 text-gray-600">
+                                <li>Accesso ai video tutorial dalla dashboard</li>
+                                <li>Visualizzazione durante l'esecuzione degli esercizi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').slice(1);
+                const target = document.getElementById(targetId);
+                target.scrollIntoView({ behavior: 'smooth' });
+
+                // Update active state
+                document.querySelectorAll('nav a').forEach(a => {
+                    a.classList.remove('bg-gray-100', 'text-gray-900');
+                    a.classList.add('text-gray-600', 'hover:bg-gray-50');
+                });
+                this.classList.remove('text-gray-600', 'hover:bg-gray-50');
+                this.classList.add('bg-gray-100', 'text-gray-900');
+            });
+        });
+    </script>
+</body>
+</html>
